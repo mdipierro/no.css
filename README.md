@@ -212,4 +212,4 @@ The idea and form styling are taken from https://milligram.io/
 
 ## References
 
-What about effects in pure CSS. Look into https://animate.style/
+For effects in pure CSS, look into https://animate.style/
