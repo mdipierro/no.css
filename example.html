@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="no.css">
+  </head>
+  <body>
+    <nav class="black">
+      <a>LOGO HERE</a>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Test1</a></li>
+        <li><a>Test2</a></li>
+        <li><a>Test3</a></li>
+        <li>
+          <a>Test4</a>
+          <ul>
+            <li><a>Test5</a></li>
+            <li><a>Test6</a></li>
+            <li><a>Test7</a></li>
+            <li><a>Test8</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a>Login</a>
+          <ul>
+            <li><a>Register</a></li>
+            <li><a>Lost Password</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="notification warning">
+      <span class="close">&#10006;</span>
+      <b>no.css</b> is a tiny CSS librarie to style pages without classes and wihtout JavaScript.
+      It defines only a few optional classes for colors, col sizes, modal, accordion, notifications.
+      Look at the source of this page to understand.
+    </div>
+    <div class="row">
+      <div class="c66">
+        <h1>Hello World</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <h2>Hello World</h2>
+        <p>This is an example</p>
+        <h3>Hello World</h3>
+        <p>This is an example</p>
+        <h4>Hello World</h4>
+        <p>This is an example</p>
+        <h5>Hello World</h5>
+        <p>This is an example</p>
+        <h6>Hello World</h6>
+        <p>This is an example</p>
+
+        <div class="padded info fill">
+          <h2>No-JS Examples</h2>
+          <div class="row">
+            <div class="c50">
+              <h6>Accordion Examples</h6>
+              <div class="accordion">
+                <!-- checkbox here is to keep the state of the accordion
+                     its id must be unique and referened by the label -->
+                <input type="checkbox" id="x03">
+                <label for="x03"><a>One</a></label>
+                <div>
+                  <div class="padded white">
+                    {content}
+                  </div>
+                </div>
+              </div>          
+              <div class="accordion">
+                <input type="checkbox" id="x04">
+                <label for="x04"><a>Two</a></label>
+                <div>
+                  <div class="padded white">
+                    {content}
+                  </div>
+                </div>
+              </div>
+              <div class="accordion">
+                <input type="checkbox" id="x05">
+                <label for="x05"><a>Three</a></label>
+                <div>
+                  <div class="padded white">
+                    {content}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c50">
+              <h6>Modal Example</h6>
+              <a class="button" href="#popup1">open modal</a>
+              <center class="modal row" id="popup1">
+                <div class="c66 white padded">
+                  <h2>Hello from modal</h2>
+                  <a class="close" href="#">&#10006;</a>
+                  {content}
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c33">
+        <h3>Table Example</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Form Example</h3>
+        <form>
+          <fieldset>
+            <div><label>Abc</label></div>
+            <input type="text"/>
+            <div><label>Abc</label></div>
+            <input type="password"/>
+          </fieldset>
+          <fieldset>
+            <label>X</label>
+            <input type="checkbox"/>
+            <label>Y</label>
+            <input type="checkbox"/>
+            <label>Z</label>
+            <input type="checkbox"/>
+          </fieldset>
+          <fieldset>
+            <div><label>Abc</label></div>
+            <textarea></textarea>
+            <div><label>Abc</label></div>
+            <select>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <input type="submit" value="Submit"/>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2>Buttons and Colors</h2>
+        <button class="white">white</button>
+        <button class="black">black</button>
+        <button class="normal">normal</button>
+        <button class="success">success</button>
+        <button class="warning">warning</button>
+        <button class="error">error</button>
+        <button class="info">info</button>
+        <button class="transparent">transparent</button>
+      </div>
+    </div>
+    <footer class="black">
+      <div class="row">
+        <div class="c25">
+          <p>This is an example</p>
+        </div>
+        <div class="c25">
+          <p>This is an example</p>
+        </div>
+        <div class="c25">
+          <p>This is an example</p>
+        </div>
+        <div class="c25">
+          <p>This is an example</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
