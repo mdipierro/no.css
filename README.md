@@ -1,6 +1,6 @@
 # no.css
 
-[INTERACTIVE DEMO](https://codepen.io/pen/?template=dyMoGqW)
+[INTERACTIVE DEMO](https://codepen.io/pen/?template=VwaLaJg)
 
 I am tired of adding classes to style my HTML. So here it is...
 
