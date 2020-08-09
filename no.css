@@ -412,7 +412,10 @@ nav>li>ul>li:first-child:before{
   border-bottom-color:white
 }
 
-/**** modal ***/
+/****************************************************
+ modal
+ ****************************************************/
+
 .modal {
   position:fixed;
   z-index:9999;
@@ -427,18 +430,16 @@ nav>li>ul>li:first-child:before{
   opacity:0;
 }
 
-/****************************************************
- modal
- ****************************************************/
-
 .modal:target {visibility:visible; opacity:1}
-.modal div {margin-left:auto; margin-right:auto; border-radius: 5px;}
+.modal div {width: 66%; margin-left:auto; margin-right:auto; border-radius: 5px;}
 .modal .close:not(.button) {
   position:absolute; top:10px; right:30px; font-size:20px;
   transition:all 200ms; text-align:center; width:24px; height:24px; 
   border-radius:100px; background: white; color: black;
 }
-
+.modal .close:not(.button):after, .notification .close:not(.button):after {
+  content: '✖';
+}
 /****************************************************
  accordion
  ****************************************************/
