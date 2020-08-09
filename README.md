@@ -25,6 +25,7 @@ Other classes:
 
 no.css assumes the following page structure
 
+```
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="no.css">
