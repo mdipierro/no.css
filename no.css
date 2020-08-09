@@ -288,7 +288,7 @@ body > div {
 .transparent{background-color:transparent;color:#111}
 .default{background-color:#0074d9;color:white}
 .success{background-color:#2ecc40;color:white}
-.warning{background-color:#ffdc00;color:#111}
+.warning{background-color:#ffdc00;color:white}
 .error{background-color:#cc1f00;color:white}
 .info{background-color:#f1f1f1;color:#111}
 .white{background-color:white;color:#111}
