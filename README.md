@@ -1,5 +1,9 @@
 # no.css
 
+[INTERACTIVE DEMO](https://codepen.io/pen/?template=dyMoGqW)
+
+I am tired of adding classes to style my HTML. So here it is...
+
 Minimalistic CSS library sesigned to style pages without need for custom classes. 
 headers, paragraphs, buttons, tables, forms, nav menus are styled automatically.
 Hence the name NO CSS.
@@ -127,3 +131,11 @@ The above classes set the background color of the element they are applied to. T
 ## Modal
 
 (UNDOCUMENTED)
+
+## License 
+
+MIT
+
+## Acknowledgements
+
+Some ideas have been taken from bootstrap, milligram, and other existing libraries.
