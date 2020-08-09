@@ -4,11 +4,12 @@
 
 I am tired of adding classes to style my HTML. So here it is...
 
-Minimalistic CSS library sesigned to style pages without need for custom classes. 
-headers, paragraphs, buttons, tables, forms, nav menus are styled automatically.
+Minimalistic CSS library sesigned to style pages without need for custom classes. headers, paragraphs, buttons, tables, forms, nav menus (with hamburger) are styled automatically.
 Hence the name NO CSS.
 
-The library does define some anyway, for the following purpose:
+no.css does not require any JS and, for this reason, it does not conflict with any JS library you may want to use.
+
+The library does define some optional calsses for the following purpose:
 
 ```
 Grid classes:
@@ -22,6 +23,8 @@ Other classes:
 ```
 
 ## Page structure
+
+![](images/main.png)
 
 no.css assumes the following page structure
 
@@ -46,11 +49,15 @@ no.css assumes the following page structure
 
 ## The nav block
 
+**NO JS REQUIRED**
+
 The nav block assumes a logo or link, and two menus implemented as unordered lists: a left menu and a right menu:
 
 ```
 <nav>
   <a>LOGO HERE</a>
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger" />
   <!-- first UL is left menu -->
   <ul>
     <li><a>Link1</a></li>
@@ -75,7 +82,26 @@ The nav block assumes a logo or link, and two menus implemented as unordered lis
 </nav>
 ```
 
+![](images/submenu.png)
+
+
 If the screen widths is less than 600px, the yop level menu items may de displayed vertically.
+
+Notice the label in input are hidden unless the screen width is less than 600px. In that case the hamburger is displayed on the right side and it is used to toggle the menu. Notice this does not require any JS but the following order is important:
+
+- logo
+- hamburger
+- left menu
+- right meny
+
+The logo can be omitted.
+The hamburger can be omitted but the menu will be always displayed on small screens.
+If only one menu (ul) is used, it is assumed to be the left menu. If you only want one menu make the other one empty to preserve position.
+
+You can add more stuff in menu but positioning is not guaranteed and you may have to adjust it with your own CSS.
+
+![](images/closed-menu.png)
+![](images/open-menu.png)
 
 ## Grid
 
@@ -102,15 +128,14 @@ Rows can be nested.
 
 If the screen width is less than 600px the columns are displayed as rows.
 
-## Tables
-
-Tables are styled automatically.
-
 ## Form
 
 Forms elements are styled automatically.
 
-## Colors
+![](images/forms.png)
+
+
+## Colors and Buttons
 
 Supported colors are:
 
@@ -125,13 +150,57 @@ Supported colors are:
 
 The above classes set the background color of the element they are applied to. They also set the background color to white or black, depending of what is more appropriate.
 
+![](images/buttons.png)
+
+## Tables
+
+![](images/tables.png)
+
 ## Accordion
 
-(UNDOCUMENTED)
+Unless otherwise specified header will be grey and body will be transparent. Lines will be highlited in light yellow on mouseover. Text is always aligned top-left.
+
+**NO JS REQUIRED**
+
+An accordion works like this:
+
+```
+<div class="accordion">
+  <input type="checkbox" id="x05">
+  <label for="x05">The accordion label goes here</label>
+  <div>
+     The accordion content goes here
+  </div>
+</div>
+```
+
+The id can have any name as long as unique. The input will be hidden and determine the status of the accordion.
+
+If you want exclusive accorions (where only one tab can be open at one time) you can repeat the patter but use a radio instead of a check box and make sure all the exclusive accordions have radio buttons with the same name but different values.
+
+![](images/accordion.png)
 
 ## Modal
 
-(UNDOCUMENTED)
+**NO JS REQUIRED**
+
+A modal works like this:
+
+```
+<a class="button" href="#popup1">open modal</a>
+
+<center class="modal" id="popup1">
+  <div class="white padded">
+    The content of the modal
+  </div>
+</center>
+```
+
+The `#{name}` of the model button must match the id of the `<center class="modal">`.
+Clicking on the button opens the modal. Notice when the modal is open it will add `#{name}` to the URL which means the modal is bookmarkabled.
+
+
+![](images/modal.png)
 
 ## License 
 
@@ -139,4 +208,8 @@ MIT
 
 ## Acknowledgements
 
-Some ideas have been taken from bootstrap, milligram, and other existing libraries.
+The idea and form styling are taken from https://milligram.io/
+
+## References
+
+What about effects in pure CSS. Look into https://animate.style/
