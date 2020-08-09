@@ -14,6 +14,8 @@
    accordion, modal
  Utils:
    full, padded, close
+
+ License: MIT
  *****************************************************/
 
 /****************************************************
@@ -340,6 +342,14 @@ nav a {
   padding:0 5px;
   text-decoration:none;
   text-align:left;
+  color: black;
+}
+
+nav.black ul ul a {
+  color: black
+}
+
+nav.black a {
   color: white
 }
 
