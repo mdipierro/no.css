@@ -1,6 +1,6 @@
 # no.css
 
-[INTERACTIVE DEMO](https://codepen.io/pen/?template=poyJbze)
+[INTERACTIVE DEMO](https://codepen.io/mdipierro/pen/BaKNxbP)
 
 I am tired of adding classes to style my HTML. I just want to include a .css file and I expect it to style the HTML for me.
 
