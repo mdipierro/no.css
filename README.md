@@ -2,12 +2,11 @@
 
 [INTERACTIVE DEMO](https://codepen.io/pen/?template=poyJbze)
 
-I am tired of adding classes to style my HTML. So here it is...
+I am tired of adding classes to style my HTML. I just want to include a .css file and I expect it to style the HTML for me.
 
-Minimalistic CSS library sesigned to style pages without need for custom classes. headers, paragraphs, buttons, tables, forms, nav menus (with hamburger) are styled automatically.
-Hence the name NO CSS.
+no.css is a minimalistic CSS library (<8K minified) designed to style pages without need for custom classes. Navigation headers, paragraphs, buttons, tables, forms, menus (with hamburger) are styled automatically. Hence the name NO CSS.
 
-no.css does not require any JS and, for this reason, it does not conflict with any JS library you may want to use.
+no.css also defined some submenus, accordion, and modal logic in pure CSS and does not require any JS.
 
 The library does define some optional calsses for the following purpose:
 
