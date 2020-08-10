@@ -9,11 +9,11 @@
  Grid:
    row, col, c25, c33, c50, c66, c75
  Colors:
-   black, white, normal, success, warning, error, info, transparent
+   black, white, default, success, warning, error, info, transparent
  Effects:
    accordion, modal
  Utils:
-   full, padded, close
+   full, padded, notification, close
 
  License: MIT
  *****************************************************/

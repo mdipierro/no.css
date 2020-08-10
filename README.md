@@ -14,16 +14,16 @@ The library does define some optional calsses for the following purpose:
 Grid classes:
   row, col, c25, c33, c50, c66, c75
 Colors classes:
-  black, white, normal, success, warning, failure, info, transparent
+  black, white, default, success, warning, error, info, transparent
 Effect classes:
   accordion, modal
 Other classes:
-  full, padded, error, close
+  full, padded, notification, close
 ```
 
 ## Page structure
 
-![](images/main.png)
+![](images/main.png =250x)
 
 no.css assumes the following page structure
 
@@ -54,9 +54,13 @@ The nav block assumes a logo or link, and two menus implemented as unordered lis
 
 ```
 <nav>
+  <!-- if you want a logo -->
   <a>LOGO HERE</a>
+
+  <!-- if you want a hamburger for small screens -->
   <label for="hamburger">&#9776;</label>
   <input type="checkbox" id="hamburger" />
+
   <!-- first UL is left menu -->
   <ul>
     <li><a>Link1</a></li>
@@ -69,7 +73,8 @@ The nav block assumes a logo or link, and two menus implemented as unordered lis
       </ul>
     </li>
   </ul>
-  <!-- second ul is right menu -->
+
+  <!-- second UL is right menu -->
   <ul>
     <li><a>Link6</a>
       <ul>
@@ -81,7 +86,7 @@ The nav block assumes a logo or link, and two menus implemented as unordered lis
 </nav>
 ```
 
-![](images/submenu.png)
+![](images/submenu.png =250x)
 
 
 If the screen widths is less than 600px, the yop level menu items may de displayed vertically.
@@ -91,7 +96,7 @@ Notice the label in input are hidden unless the screen width is less than 600px.
 - logo
 - hamburger
 - left menu
-- right meny
+- right menu
 
 The logo can be omitted.
 The hamburger can be omitted but the menu will be always displayed on small screens.
@@ -99,8 +104,8 @@ If only one menu (ul) is used, it is assumed to be the left menu. If you only wa
 
 You can add more stuff in menu but positioning is not guaranteed and you may have to adjust it with your own CSS.
 
-![](images/closed-menu.png)
-![](images/open-menu.png)
+![](images/closed-menu.png =250x)
+![](images/open-menu.png =250x)
 
 ## Grid
 
@@ -131,7 +136,7 @@ If the screen width is less than 600px the columns are displayed as rows.
 
 Forms elements are styled automatically.
 
-![](images/forms.png)
+![](images/forms.png =250x)
 
 
 ## Colors and Buttons
@@ -149,11 +154,11 @@ Supported colors are:
 
 The above classes set the background color of the element they are applied to. They also set the background color to white or black, depending of what is more appropriate.
 
-![](images/buttons.png)
+![](images/buttons.png =250x)
 
 ## Tables
 
-![](images/tables.png)
+![](images/tables.png =250x)
 
 ## Accordion
 
@@ -177,7 +182,7 @@ The id can have any name as long as unique. The input will be hidden and determi
 
 If you want exclusive accorions (where only one tab can be open at one time) you can repeat the patter but use a radio instead of a check box and make sure all the exclusive accordions have radio buttons with the same name but different values.
 
-![](images/accordion.png)
+![](images/accordion.png =250x)
 
 ## Modal
 
@@ -199,7 +204,7 @@ The `#{name}` of the model button must match the id of the `<center class="modal
 Clicking on the button opens the modal. Notice when the modal is open it will add `#{name}` to the URL which means the modal is bookmarkabled.
 
 
-![](images/modal.png)
+![](images/modal.png =250x)
 
 ## License 
 
