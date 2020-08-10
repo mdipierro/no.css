@@ -8,7 +8,7 @@ no.css is a minimalistic CSS library (<8K minified) designed to style pages with
 
 no.css also defined some submenus, accordion, and modal logic in pure CSS and does not require any JS.
 
-The library does define some optional calsses for the following purpose:
+The library does define some optional classes for the following purpose:
 
 ```
 Grid classes:
@@ -89,7 +89,7 @@ The nav block assumes a logo or link, and two menus implemented as unordered lis
 ![](images/submenu.png)
 
 
-If the screen widths is less than 600px, the yop level menu items may de displayed vertically.
+If the screen width is less than 600px, the top level menu items may de displayed vertically.
 
 Notice the label in input are hidden unless the screen width is less than 600px. In that case the hamburger is displayed on the right side and it is used to toggle the menu. Notice this does not require any JS but the following order is important:
 
@@ -178,7 +178,7 @@ An accordion works like this:
 </div>
 ```
 
-The id can have any name as long as unique. The input will be hidden and determine the status of the accordion.
+The id can have any name as long as it is unique. The input will be hidden and determine the status of the accordion.
 
 If you want exclusive accorions (where only one tab can be open at one time) you can repeat the patter but use a radio instead of a check box and make sure all the exclusive accordions have radio buttons with the same name but different values.
 
