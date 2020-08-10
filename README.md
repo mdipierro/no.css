@@ -23,7 +23,7 @@ Other classes:
 
 ## Page structure
 
-![](images/main.png =250x)
+![](images/main.png | width=250)
 
 no.css assumes the following page structure
 
@@ -86,7 +86,7 @@ The nav block assumes a logo or link, and two menus implemented as unordered lis
 </nav>
 ```
 
-![](images/submenu.png =250x)
+![](images/submenu.png | width=250)
 
 
 If the screen widths is less than 600px, the yop level menu items may de displayed vertically.
@@ -104,8 +104,8 @@ If only one menu (ul) is used, it is assumed to be the left menu. If you only wa
 
 You can add more stuff in menu but positioning is not guaranteed and you may have to adjust it with your own CSS.
 
-![](images/closed-menu.png =250x)
-![](images/open-menu.png =250x)
+![](images/closed-menu.png | width=250)
+![](images/open-menu.png | width=250)
 
 ## Grid
 
@@ -136,7 +136,7 @@ If the screen width is less than 600px the columns are displayed as rows.
 
 Forms elements are styled automatically.
 
-![](images/forms.png =250x)
+![](images/forms.png | width=250)
 
 
 ## Colors and Buttons
@@ -154,11 +154,11 @@ Supported colors are:
 
 The above classes set the background color of the element they are applied to. They also set the background color to white or black, depending of what is more appropriate.
 
-![](images/buttons.png =250x)
+![](images/buttons.png | width=250)
 
 ## Tables
 
-![](images/tables.png =250x)
+![](images/tables.png | width=250)
 
 ## Accordion
 
@@ -182,7 +182,7 @@ The id can have any name as long as unique. The input will be hidden and determi
 
 If you want exclusive accorions (where only one tab can be open at one time) you can repeat the patter but use a radio instead of a check box and make sure all the exclusive accordions have radio buttons with the same name but different values.
 
-![](images/accordion.png =250x)
+![](images/accordion.png | width=250)
 
 ## Modal
 
@@ -204,7 +204,7 @@ The `#{name}` of the model button must match the id of the `<center class="modal
 Clicking on the button opens the modal. Notice when the modal is open it will add `#{name}` to the URL which means the modal is bookmarkabled.
 
 
-![](images/modal.png =250x)
+![](images/modal.png | width=250)
 
 ## License 
 
