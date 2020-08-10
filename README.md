@@ -200,9 +200,10 @@ A modal works like this:
 </center>
 ```
 
-The `#{name}` of the model button must match the id of the `<center class="modal">`.
+The `#{name}` of the modal button must match the id of the `<center class="modal">`.
 Clicking on the button opens the modal. Notice when the modal is open it will add `#{name}` to the URL which means the modal is bookmarkabled.
 
+You can have as many modals as you like, as long as they have different trigger buttons and ids.
 
 ![](images/modal.png)
 
