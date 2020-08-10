@@ -19,9 +19,9 @@ Effect classes:
   accordion, modal
 Other classes:
   full, padded, notification, close, button (to make a link look like a button)
+```
 
 Notice you can and should use header, main, section. Nothing here prevents that. For example you can warp nav in `<header>` and replace the main div with `<main>`. We see this an orthogonal issue because the CSS does not know and does not care if a section is a column or a section is broken into multiple columns for example.
-```
 
 ## Page structure
 
