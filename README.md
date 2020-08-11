@@ -16,7 +16,7 @@ Grid classes:
 Colors classes:
   black, white, default, success, warning, error, info, transparent
 Effect classes:
-  accordion
+  accordion, close
 Other classes:
   fill, padded
 ```
@@ -142,17 +142,17 @@ Use `role="alert"` for alert notifcations. Use color classes to style them, for 
 
 ```
 <div role="alert" class="warning">
-  <span aria-label="close"></span>
+  <span class="close"></span>
   {content}
 </div>
 ```
 
-The `<span aria-label="close"></span>` will optionally generate a close button. Unlike with modals, 
+The `<span class="close"></span>` will optionally generate a close button. Unlike with modals, 
 you have to handle closing alert. This depends on the exact logic you want. You can do for example:
 
 ```
 <div role="alert" class="warning">
-  <span aria-label="close" onclick="this.parentNode.parentNode.removeChild(this.parentNode)"></span>
+  <span class="close" onclick="this.parentNode.parentNode.removeChild(this.parentNode)"></span>
   {content}
 </div>
 ```
@@ -223,7 +223,7 @@ Use `role="dialog"` for modals. Here is a possible example:
 <div role="dialog">
   <input type="checkbox" id="x06"/>
   <div>
-     <label aria-label="close" for="x06"></label>
+     <label class="close" for="x06"></label>
      <center class="white padded">
        {content}
      </center>
