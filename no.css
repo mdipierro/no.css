@@ -1,10 +1,11 @@
 /*****************************************************
- no.css version 2020-08-08.1
+ no.css version 2020-08-09.1
  
  Designed to style pages without need for custom classes.
- headers, paragraphs, buttons, tables, forms, nav menus are styled automatically.
- The only custom classes are color names and grid row/col sizes.
- It also implements pure CSS accordions and modals.
+ headers, paragraphs, buttons, tables, forms, 
+ nav menus, alerts, and dialogs are styled automatically.
+ The only custom classes are color names, grid column sizes,
+ and a few convenience ones.
 
  Grid:
    columns, col, c25, c33, c50, c66, c75

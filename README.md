@@ -138,11 +138,28 @@ If the screen width is less than 600px the columns are displayed as rows.
 
 ## Alerts
 
-Used `role="alert"` for notifcations
+Use `role="alert"` for alert notifcations. Use color classes to style them, for example:
+
+```
+<div role="alert" class="warning">
+  <span aria-label="close"></span>
+  {content}
+</div>
+```
+
+The `<span aria-label="close"></span>` will optionally generate a close button. Unlike with modals, 
+you have to handle closing alert. This depends on the exact logic you want. You can do for example:
+
+```
+<div role="alert" class="warning">
+  <span aria-label="close" onclick="this.parentNode.parentNode.removeChild(this.parentNode)"></span>
+  {content}
+</div>
+```
 
 ## Form
 
-Forms elements are styled automatically.
+Forms elements are styled automatically. You deal with their alignment.
 
 ![](images/forms.png)
 
@@ -162,7 +179,7 @@ Supported colors are:
 
 The above classes set the background color of the element they are applied to. They also set the background color to white or black, depending of what is more appropriate.
 
-You can use `role="button"` to make a link or anything else look like a button.
+You can use `role="button"` to make a link or other tag look like a button.
 
 ![](images/buttons.png)
 
@@ -206,7 +223,7 @@ Use `role="dialog"` for modals. Here is a possible example:
 <div role="dialog">
   <input type="checkbox" id="x06"/>
   <div>
-     <label class="close" for="x06"></label>
+     <label aria-label="close" for="x06"></label>
      <center class="white padded">
        {content}
      </center>
