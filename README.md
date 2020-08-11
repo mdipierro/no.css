@@ -18,7 +18,7 @@ Colors classes:
 Effect classes:
   accordion, modal
 Other classes:
-  fill, padded, notification, close, button (to make a link look like a button)
+  fill, padded, notification, close
 ```
 
 Notice you can and should use header, main, section. Nothing here prevents that. For example you can warp nav in `<header>` and replace the main div with `<main>`. We see this an orthogonal issue because the CSS does not know and does not care if a section is a column or a section is broken into multiple columns for example.
@@ -156,6 +156,8 @@ Supported colors are:
 
 The above classes set the background color of the element they are applied to. They also set the background color to white or black, depending of what is more appropriate.
 
+You can use `role="button"` to make a link or anything else look like a button.
+
 ![](images/buttons.png)
 
 ## Tables
@@ -193,19 +195,21 @@ If you want exclusive accorions (where only one tab can be open at one time) you
 A modal works like this:
 
 ```
-<a class="button" href="#popup1">open modal</a>
-
-<center class="modal" id="popup1">
-  <div class="white padded">
-    The content of the modal
+<label role="button" for="x06">open modal</label>
+...
+<div class="modal">
+  <input type="checkbox" id="x06"/>
+  <div>
+     <label class="close" for="x06"></label>
+     <center class="white padded">
+       {content}
+     </center>
   </div>
-</center>
+</div>
 ```
 
-The `#{name}` of the modal button must match the id of the `<center class="modal">`.
-Clicking on the button opens the modal. Notice when the modal is open it will add `#{name}` to the URL which means the modal is bookmarkabled.
-
-You can have as many modals as you like, as long as they have different trigger buttons and ids.
+Clicking on the label (that optionally looks like a button) opens the modal.
+You can have as many modals as you like, as long as they have different checkboxes.
 
 ![](images/modal.png)
 
