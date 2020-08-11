@@ -113,6 +113,7 @@ You can add more stuff in menu but positioning is not guaranteed and you may hav
 
 The structure of a grid is the following:
 
+```
 <div class="columns">
    <div class="c75">
      ...
@@ -121,6 +122,7 @@ The structure of a grid is the following:
      ...
    </div>
 </div>
+```
 
 This indicates a 75% column and a 25% column. Only predefined column widths are:
 
