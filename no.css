@@ -7,13 +7,13 @@
  It also implements pure CSS accordions and modals.
 
  Grid:
-   row, col, c25, c33, c50, c66, c75
+   columns, col, c25, c33, c50, c66, c75
  Colors:
    black, white, default, success, warning, error, info, transparent
  Effects:
-   accordion, modal
+   accordion
  Utils:
-   fill, padded, notification
+   fill, padded
 
  License: MIT
  *****************************************************/
@@ -243,12 +243,12 @@ body > div {
   margin-right: auto;
 }
 
-.row {
+.columns {
   display: table;
   width: 100%;
 }
 
-.row .row {
+.columns .columns {
   margin: 0 -1.5em;
 }
 
@@ -273,7 +273,7 @@ body > div {
   }
 }
 
-.row:after {
+.columns:after {
   content: "";
   clear: both;
   display: table;
@@ -442,7 +442,7 @@ nav>li>ul>li:first-child:before{
  modal
  ****************************************************/
 
-.modal > div {
+[role="dialog"] > div {
   position:fixed;
   z-index:9999;
   top:0;
@@ -455,10 +455,10 @@ nav>li>ul>li:first-child:before{
   visibility:hidden;
   opacity:0;
 }
-.modal > input[type=checkbox] { display: none !important; }
+[role="dialog"] > input[type=checkbox] { display: none !important; }
 input[type=checkbox]:checked ~ div {visibility:visible; opacity:1}
-.modal > div > *:not(.close) {width: 66%; margin-left:auto; margin-right:auto; border-radius: 5px;}
-.modal > div > .close, .notification > .close {
+[role="dialog"] > div > *:not([aria-label="close"]) {width: 66%; margin-left:auto; margin-right:auto; border-radius: 5px;}
+[role="dialog"] > div > [aria-label="close"], [role="alert"] > [aria-label="close"] {
   background: url('data:image/svg+xml;utf8,<svg fill="%23000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688 L 7.2929688 8.7070312 L 10.585938 12 L 7.2929688 15.292969 L 8.7070312 16.707031 L 12 13.414062 L 15.292969 16.707031 L 16.707031 15.292969 L 13.414062 12 L 16.707031 8.7070312 L 15.292969 7.2929688 L 12 10.585938 L 8.7070312 7.2929688 z"/></svg>') center right no-repeat;
   width:24px; height:24px; cursor: pointer; position:absolute; top:15px; right:15px;
 }
@@ -491,7 +491,7 @@ input[type=checkbox]:checked ~ div {visibility:visible; opacity:1}
  convenience
  ****************************************************/
 
-.notification {
+[role="alert"] {
   margin: 20px 25px 0 25px;
   padding: 20px 50px 20px 20px;
   position: relative;
@@ -499,7 +499,7 @@ input[type=checkbox]:checked ~ div {visibility:visible; opacity:1}
   color: black;
 }
 
-.notification > .close {
+[role="alert"] > [aria-label="close"] {
   position: absolute;
   top: 10px;
   right: 10px;

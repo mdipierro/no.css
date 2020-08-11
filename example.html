@@ -32,13 +32,13 @@
         </li>
       </ul>
     </nav>
-    <div class="notification warning">
-      <span class="close"></span>
+    <div role="alert" class="warning">
+      <span aria-label="close"></span>
       <b>no.css</b> is a tiny CSS librarie to style pages without classes and wihtout JavaScript.
       It defines only a few optional classes for colors, col sizes, modal, accordion, notifications.
       Look at the source of this page to understand.
     </div>
-    <div class="row">
+    <div class="columns">
       <div class="c66">
         <h1>Hello World</h1>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
@@ -55,7 +55,7 @@
 
         <div class="padded info fill">
           <h2>No-JS Examples</h2>
-          <div class="row">
+          <div class="columns">
             <div class="c50">
               <h6>Accordion Examples</h6>
               <div class="accordion">
@@ -63,38 +63,32 @@
                      its id must be unique and referened by the label -->
                 <input type="checkbox" id="x03">
                 <label for="x03"><a>One</a></label>
-                <div>
-                  <div class="padded white">
-                    {content}
-                  </div>
+                <div class="white">
+                  {content}
                 </div>
               </div>          
               <div class="accordion">
                 <input type="checkbox" id="x04">
                 <label for="x04"><a>Two</a></label>
-                <div>
-                  <div class="padded white">
-                    {content}
-                  </div>
+                <div class="white">
+                  {content}
                 </div>
               </div>
               <div class="accordion">
                 <input type="checkbox" id="x05">
                 <label for="x05"><a>Three</a></label>
-                <div>
-                  <div class="padded white">
-                    {content}
-                  </div>
+                <div class="white">
+                  {content}
                 </div>
               </div>
             </div>
             <div class="c50">
               <h6>Modal Example</h6>
               <label role="button" for="x06">open modal</label>
-              <div class="modal">
+              <div role="dialog">
                 <input type="checkbox" id="x06"/>
                 <div>
-                  <label class="close" for="x06"></label>
+                  <label aria-label="close" for="x06"></label>
                   <center class="white padded">
                     <h2>Hello from modal</h2>
                     {content}
@@ -135,13 +129,11 @@
         </table>
         <h3>Form Example</h3>
         <form>
-          <fieldset>
-            <div><label>Abc</label></div>
-            <input type="text"/>
-            <div><label>Abc</label></div>
-            <input type="password"/>
-          </fieldset>
-          <fieldset>
+          <div><label>Abc</label></div>
+          <input type="text"/>
+          <div><label>Abc</label></div>
+          <input type="password"/>
+          <fieldset>            
             <label>X</label>
             <input type="checkbox"/>
             <label>Y</label>
@@ -149,23 +141,19 @@
             <label>Z</label>
             <input type="checkbox"/>
           </fieldset>
-          <fieldset>
-            <div><label>Abc</label></div>
-            <textarea></textarea>
-            <div><label>Abc</label></div>
-            <select>
-              <option>A</option>
-              <option>B</option>
-              <option>C</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <input type="submit" value="Submit"/>
-          </fieldset>
+          <div><label>Abc</label></div>
+          <textarea></textarea>
+          <div><label>Abc</label></div>
+          <select>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+          <input type="submit" value="Submit"/>
         </form>
       </div>
     </div>
-    <div class="row">
+    <div class="columns">
       <div class="col">
         <h2>Buttons and Colors</h2>
         <button class="white">white</button>
@@ -178,20 +166,18 @@
         <button class="transparent">transparent</button>
       </div>
     </div>
-    <footer class="black">
-      <div class="row">
-        <div class="c25">
-          <p>This is an example</p>
-        </div>
-        <div class="c25">
-          <p>This is an example</p>
-        </div>
-        <div class="c25">
-          <p>This is an example</p>
-        </div>
-        <div class="c25">
-          <p>This is an example</p>
-        </div>
+    <footer class="black columns">
+      <div class="c25">
+        <p>This is an example</p>
+      </div>
+      <div class="c25">
+        <p>This is an example</p>
+      </div>
+      <div class="c25">
+        <p>This is an example</p>
+      </div>
+      <div class="c25">
+        <p>This is an example</p>
       </div>
     </footer>
   </body>

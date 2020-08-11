@@ -12,13 +12,13 @@ The library does define some optional classes for the following purpose:
 
 ```
 Grid classes:
-  row, col, c25, c33, c50, c66, c75
+  columns, col, c25, c33, c50, c66, c75
 Colors classes:
   black, white, default, success, warning, error, info, transparent
 Effect classes:
-  accordion, modal
+  accordion
 Other classes:
-  fill, padded, notification, close
+  fill, padded
 ```
 
 Notice you can and should use header, main, section. Nothing here prevents that. For example you can warp nav in `<header>` and replace the main div with `<main>`. We see this an orthogonal issue because the CSS does not know and does not care if a section is a column or a section is broken into multiple columns for example.
@@ -36,8 +36,8 @@ no.css assumes the following page structure
   </head>
   <body>
     <nav class="black">...</nav>
-    <div class="notification">...optional message...</div>
-    <div class="row">
+    <div role="alert">...optional message...</div>
+    <div class="columns">
       <div class="c75">...main...</div>
       <div class="c25">...sidebar...</div>
     </div>
@@ -113,7 +113,7 @@ You can add more stuff in menu but positioning is not guaranteed and you may hav
 
 The structure of a grid is the following:
 
-<div class="row">
+<div class="columns">
    <div class="c75">
      ...
    </div>
@@ -130,9 +130,13 @@ This indicates a 75% column and a 25% column. Only predefined column widths are:
 - c66 (66%)
 - c75 (75%)
 
-Rows can be nested.
+`columns` can be nested.
 
 If the screen width is less than 600px the columns are displayed as rows.
+
+## Alerts
+
+Used `role="alert"` for notifcations
 
 ## Form
 
@@ -151,7 +155,7 @@ Supported colors are:
 - success (green)
 - warning (yellow)
 - error (red)
-- info (gray)
+- info (light gray)
 - transparent
 
 The above classes set the background color of the element they are applied to. They also set the background color to white or black, depending of what is more appropriate.
@@ -192,12 +196,12 @@ If you want exclusive accorions (where only one tab can be open at one time) you
 
 **NO JS REQUIRED**
 
-A modal works like this:
+Use `role="dialog"` for modals. Here is a possible example:
 
 ```
 <label role="button" for="x06">open modal</label>
 ...
-<div class="modal">
+<div role="dialog">
   <input type="checkbox" id="x06"/>
   <div>
      <label class="close" for="x06"></label>
