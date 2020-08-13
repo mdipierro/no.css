@@ -189,7 +189,7 @@ thead th {
  forms
  ****************************************************/
 
-input[type='color'], input[type='date'], input[type='datetime'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], input[type='week'], input:not([type]), textarea, select {
+input[type='color'], input[type='date'], input[type='datetime'], input[type='time'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], input[type='week'], input:not([type]), textarea, select {
   -webkit-appearance: none;
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
@@ -202,7 +202,7 @@ input[type='color'], input[type='date'], input[type='datetime'], input[type='dat
   width: 90%;
 }
 
-input[type='color']:focus, input[type='date']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='week']:focus, input:not([type]):focus, textarea:focus, select:focus {
+input[type='color']:focus, input[type='date']:focus, input[type='datetime']:focus, input[type='time'], input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='week']:focus, input:not([type]):focus, textarea:focus, select:focus {
   border-color: #0074d9;
   outline: 0;
 }
