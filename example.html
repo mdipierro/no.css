@@ -33,140 +33,142 @@
         </li>
       </ul>
     </nav>
-    <div role="alert" class="warning">
-      <span class="close"></span>
-      <b>no.css</b> is a tiny CSS librarie to style pages without classes and wihtout JavaScript.
-      It defines only a few optional classes for colors, col sizes, modal, accordion, alerts.
-      Look at the source of this page to understand.
-    </div>
-    <div class="columns">
-      <div class="c66">
-        <h1>Hello World</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <h2>Hello World</h2>
-        <p>This is an example</p>
-        <h3>Hello World</h3>
-        <p>This is an example</p>
-        <h4>Hello World</h4>
-        <p>This is an example</p>
-        <h5>Hello World</h5>
-        <p>This is an example</p>
-        <h6>Hello World</h6>
-        <p>This is an example</p>
-
-        <div class="padded info fill">
-          <h2>No-JS Examples</h2>
-          <div class="columns">
-            <div class="c50">
-              <h6>Accordion Examples</h6>
-              <div class="accordion">
-                <!-- checkbox here is to keep the state of the accordion
-                     its id must be unique and referened by the label -->
-                <input type="checkbox" id="x03">
-                <label for="x03"><a>One</a></label>
-                <div class="white">
-                  {content}
-                </div>
-              </div>          
-              <div class="accordion">
-                <input type="checkbox" id="x04">
-                <label for="x04"><a>Two</a></label>
-                <div class="white">
-                  {content}
-                </div>
-              </div>
-              <div class="accordion">
-                <input type="checkbox" id="x05">
-                <label for="x05"><a>Three</a></label>
-                <div class="white">
-                  {content}
-                </div>
-              </div>
-            </div>
-            <div class="c50">
-              <h6>Modal Example</h6>
-              <label role="button" for="x06">open modal</label>
-              <div role="dialog">
-                <input type="checkbox" id="x06"/>
-                <div>
-                  <label class="close" for="x06"></label>
-                  <center class="white padded">
-                    <h2>Hello from modal</h2>
+    <center>
+      <div role="alert" class="warning">
+        <span class="close"></span>
+        <b>no.css</b> is a tiny CSS librarie to style pages without classes and wihtout JavaScript.
+        It defines only a few optional classes for colors, col sizes, modal, accordion, alerts.
+        Look at the source of this page to understand.
+      </div>
+      <div class="columns">
+        <div class="c66">
+          <h1>Hello World</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <h2>Hello World</h2>
+          <p>This is an example</p>
+          <h3>Hello World</h3>
+          <p>This is an example</p>
+          <h4>Hello World</h4>
+          <p>This is an example</p>
+          <h5>Hello World</h5>
+          <p>This is an example</p>
+          <h6>Hello World</h6>
+          <p>This is an example</p>
+          
+          <div class="padded info fill">
+            <h2>No-JS Examples</h2>
+            <div class="columns">
+              <div class="c50">
+                <h6>Accordion Examples</h6>
+                <div class="accordion">
+                  <!-- checkbox here is to keep the state of the accordion
+                       its id must be unique and referened by the label -->
+                  <input type="checkbox" id="x03">
+                  <label for="x03"><a>One</a></label>
+                  <div class="white">
                     {content}
-                  </center>
+                  </div>
+                </div>          
+                <div class="accordion">
+                  <input type="checkbox" id="x04">
+                  <label for="x04"><a>Two</a></label>
+                  <div class="white">
+                    {content}
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input type="checkbox" id="x05">
+                  <label for="x05"><a>Three</a></label>
+                  <div class="white">
+                    {content}
+                  </div>
+                </div>
+              </div>
+              <div class="c50">
+                <h6>Modal Example</h6>
+                <label role="button" for="x06">open modal</label>
+                <div role="dialog">
+                  <input type="checkbox" id="x06"/>
+                  <div>
+                    <label class="close" for="x06"></label>
+                    <center class="white padded">
+                      <h2>Hello from modal</h2>
+                      {content}
+                    </center>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="c33">
+          <h3>Table Example</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Form Example</h3>
+          <form>
+            <div><label>Abc</label></div>
+            <input type="text"/>
+            <div><label>Abc</label></div>
+            <input type="password"/>
+            <fieldset>            
+              <label>X</label>
+              <input type="checkbox"/>
+              <label>Y</label>
+              <input type="checkbox"/>
+              <label>Z</label>
+              <input type="checkbox"/>
+            </fieldset>
+            <div><label>Abc</label></div>
+            <textarea></textarea>
+            <div><label>Abc</label></div>
+            <select>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
       </div>
-      <div class="c33">
-        <h3>Table Example</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>A</th>
-              <th>B</th>
-              <th>C</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-            </tr>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-            </tr>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3>Form Example</h3>
-        <form>
-          <div><label>Abc</label></div>
-          <input type="text"/>
-          <div><label>Abc</label></div>
-          <input type="password"/>
-          <fieldset>            
-            <label>X</label>
-            <input type="checkbox"/>
-            <label>Y</label>
-            <input type="checkbox"/>
-            <label>Z</label>
-            <input type="checkbox"/>
-          </fieldset>
-          <div><label>Abc</label></div>
-          <textarea></textarea>
-          <div><label>Abc</label></div>
-          <select>
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-          </select>
-          <input type="submit" value="Submit"/>
-        </form>
+      <div class="columns">
+        <div class="col">
+          <h2>Buttons and Colors</h2>
+          <button class="white">white</button>
+          <button class="black">black</button>
+          <button class="normal">normal</button>
+          <button class="success">success</button>
+          <button class="warning">warning</button>
+          <button class="error">error</button>
+          <button class="info">info</button>
+          <button class="transparent">transparent</button>
+        </div>
       </div>
-    </div>
-    <div class="columns">
-      <div class="col">
-        <h2>Buttons and Colors</h2>
-        <button class="white">white</button>
-        <button class="black">black</button>
-        <button class="normal">normal</button>
-        <button class="success">success</button>
-        <button class="warning">warning</button>
-        <button class="error">error</button>
-        <button class="info">info</button>
-        <button class="transparent">transparent</button>
-      </div>
-    </div>
+    </center>
     <footer class="black columns">
       <div class="c25">
         <p>This is an example</p>
