@@ -1,12 +1,27 @@
 # no.css
 
+**The no-JS little sibling of [pico.css](https://picocss.com).** A classless CSS library under 10 KB minified that styles your HTML automatically *and* ships a responsive hamburger nav, modal, and accordion in pure CSS — no JavaScript required.
+
 [INTERACTIVE DEMO](https://codepen.io/mdipierro/pen/BaKNxbP)
 
 I am tired of adding classes to style my HTML. I just want to include a .css file and I expect it to style the HTML for me.
 
-no.css is a minimalistic CSS library (<8K minified) designed to style pages without need for custom classes. Navigation headers, paragraphs, buttons, tables, forms, menus (with hamburger) are styled automatically. Hence the name NO CSS.
+no.css styles navigation, headers, paragraphs, buttons, tables, forms, and menus (with hamburger) automatically. Hence the name NO CSS.
 
-no.css also defined some submenus, accordion, and modal logic in pure CSS and does not require any JS.
+Submenus, accordion, and modal logic are all implemented in pure CSS — no JavaScript, no build step, single file you can read end-to-end in five minutes.
+
+## Theming and dark mode
+
+Colors, spacing, and radii are exposed as CSS variables on `:root`. Override any of them to retheme:
+
+```css
+:root {
+  --primary: #ff6b35;
+  --radius: 0;
+}
+```
+
+Dark mode follows `prefers-color-scheme` automatically.
 
 The library does define some optional classes for the following purpose:
 
